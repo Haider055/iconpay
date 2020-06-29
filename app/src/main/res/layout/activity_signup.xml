@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <TextView
+                android:layout_marginTop="26dp"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="Sign Up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                app:boxBackgroundColor="#E8E8E8"
+                style="@style/LoginTextInputLayoutStyle"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/name"
+                    android:hint="Name"
+                    android:drawableBottom="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:boxBackgroundColor="#E8E8E8"
+
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/surname"
+                    android:hint="Surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                app:passwordToggleEnabled="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:boxBackgroundColor="#E8E8E8"
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint="ID Number"
+                    android:id="@+id/idnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                app:passwordToggleEnabled="true"
+                app:boxBackgroundColor="#E8E8E8"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/phone"
+                    android:hint="Phone Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                app:boxBackgroundColor="#E8E8E8"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/Email"
+                    android:hint="Email"
+                    android:drawableBottom="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:boxBackgroundColor="#E8E8E8"
+
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/physcaladdress"
+                    android:hint="Physical Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                app:passwordToggleEnabled="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:boxBackgroundColor="#E8E8E8"
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint="Country"
+                    android:id="@+id/contry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                app:passwordToggleEnabled="true"
+                app:boxBackgroundColor="#E8E8E8"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/province"
+                    android:hint="Province"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                app:boxBackgroundColor="#E8E8E8"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/zipcode"
+                    android:hint="Zipcode"
+                    android:drawableBottom="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <View
+                android:background="#9A9A9A"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:boxBackgroundColor="#E8E8E8"
+
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/company"
+                    android:hint="Company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                app:passwordToggleEnabled="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:boxBackgroundColor="#E8E8E8"
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint="Registration Number"
+                    android:id="@+id/regno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:boxStrokeColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusTopStart="24dp"
+                app:boxCornerRadiusBottomEnd="24dp"
+                app:boxCornerRadiusBottomStart="24dp"
+                app:boxCornerRadiusTopEnd="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                app:passwordToggleEnabled="true"
+                app:boxBackgroundColor="#E8E8E8"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/represent"
+                    android:hint="Represent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/signup"
+                app:cornerRadius="28dp"
+                android:layout_margin="22dp"
+                android:text="Next"
+                android:layout_gravity="center"
+                android:backgroundTint="#2064Eb"
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:text="Already have an account "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:text="Login"
+                    android:id="@+id/alreadyhaveaccount"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>
